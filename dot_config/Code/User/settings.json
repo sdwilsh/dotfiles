@@ -1,0 +1,16 @@
+{
+    "editor.fontFamily": "'FiraCode Nerd Font Mono',  monospace",
+    "remote.SSH.path": "/usr/bin/ssh",
+    "security.promptForRemoteFileProtocolHandling": false,
+    "dev.containers.defaultExtensionsIfInstalledLocally": [
+        "GitHub.vscode-pull-request-github"
+    ],
+    "dev.containers.defaultFeatures": {
+        "ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {},
+        "ghcr.io/devcontainers-extra/features/starship:1": {
+            "version": "latest"
+        }
+    },
+    "dotfiles.repository": "https://github.com/sdwilsh/dotfiles.git",
+    "dotfiles.targetPath": "~/.local/share/chezmoi"
+}
