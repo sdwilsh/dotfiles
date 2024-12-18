@@ -14,8 +14,14 @@ if status is-interactive
     if command -q jj
         jj util completion fish | source
     end
+    if command -q just
+        just --completions fish | source
+    end
     if command -q starship
         starship init fish | source
+    end
+    if command -q ujust
+        just --completions fish | sed -e 's/ just / ujust /' | source
     end
 end
 
