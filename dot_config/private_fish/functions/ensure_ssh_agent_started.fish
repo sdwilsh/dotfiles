@@ -8,7 +8,6 @@ function __ssh_agent_is_started -d "Check if an ssh agent is already running."
   end
 
   ps -ef | grep $SSH_AGENT_PID | grep -v grep | grep -q ssh-agent
-  #pgrep ssh-agent
   return $status
 end
 
