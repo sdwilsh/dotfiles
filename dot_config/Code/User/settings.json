@@ -12,5 +12,6 @@
         }
     },
     "dotfiles.repository": "https://github.com/sdwilsh/dotfiles.git",
-    "dotfiles.targetPath": "~/.local/share/chezmoi"
+    "dotfiles.targetPath": "~/.local/share/chezmoi",
+    "terminal.integrated.defaultProfile.linux": "fish"
 }
