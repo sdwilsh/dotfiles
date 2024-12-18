@@ -3,12 +3,12 @@ function __ssh_agent_is_started -d "Check if an ssh agent is already running."
     source $SSH_ENV > /dev/null
   end
 
-  if test -z "$SSH_AGENT_PID"
-    return 1
+  # Common in devcontainers, we only have an auth socket file.
+  if test -S $SSH_AUTH_SOCK
+    return 0
   end
 
-  # Common in devcontainers, we only have an auth socket file.
-  if test -f $SSH_AUTH_SOCK
+  if test -z "$SSH_AGENT_PID"
     return 1
   end
 
