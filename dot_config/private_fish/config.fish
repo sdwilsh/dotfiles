@@ -11,6 +11,9 @@ if status is-interactive
     if command -q chezmoi
         chezmoi completion fish | source
     end
+    if command -q devpod-cli
+        devpod-cli completion fish | source
+    end
     if command -q jj
         jj util completion fish | source
     end
