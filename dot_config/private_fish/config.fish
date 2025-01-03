@@ -8,6 +8,10 @@ if status is-interactive
     fish_vi_key_bindings
 
     # Program-dependent Things
+    if command -q atuin
+        atuin init fish | source
+        atuin gen-completions --shell fish | source
+    end
     if command -q chezmoi
         chezmoi completion fish | source
     end

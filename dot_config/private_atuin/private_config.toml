@@ -1,0 +1,15 @@
+dialect = "uk"
+
+update_check = false
+
+sync_address = "https://atuin.hogs.tswn.us"
+
+## possible values: emacs, subl
+# word_jump_mode = "emacs"
+
+enter_accept = true
+
+keymap_mode = "vim-normal"
+
+[sync]
+records = true
