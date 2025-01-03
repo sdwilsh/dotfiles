@@ -1,6 +1,18 @@
+dialect = "uk"
+
+enter_accept = true
+
+keymap_mode = "vim-insert"
+
+sync_address = "https://atuin.hogs.tswn.us"
+
+update_check = false
+
+[stats]
 common_subcommands = [
   "apt",
   "cargo",
+  "chezmoi",
   "composer",
   "dnf",
   "docker",
@@ -8,6 +20,7 @@ common_subcommands = [
   "go",
   "ip",
   "jj",
+  "just",
   "kubectl",
   "nix",
   "nmcli",
@@ -18,18 +31,9 @@ common_subcommands = [
   "port",
   "systemctl",
   "tmux",
+  "ujust",
   "yarn",
 ]
-
-dialect = "uk"
-
-enter_accept = true
-
-keymap_mode = "vim-insert"
-
-sync_address = "https://atuin.hogs.tswn.us"
-
-update_check = false
 
 [sync]
 records = true
