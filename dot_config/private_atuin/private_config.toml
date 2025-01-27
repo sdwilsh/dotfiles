@@ -4,7 +4,7 @@ enter_accept = true
 
 keymap_mode = "vim-insert"
 
-sync_address = "https://atuin.hogs.tswn.us"
+sync_address = "https://atuin.tswn.us"
 
 update_check = false
 
