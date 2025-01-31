@@ -3,4 +3,4 @@ name = "Shawn Wilsher"
 email = "656602+sdwilsh@users.noreply.github.com"
 
 [ui]
-diff-editor = "vim"
+editor = "vim"
