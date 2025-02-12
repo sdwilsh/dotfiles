@@ -25,7 +25,7 @@ if status is-interactive
         just --completions fish | source
     end
     if command -q kustomize
-        kustomize completions fish | source
+        kustomize completion fish | source
     end
     if command -q starship
         starship init fish | source
