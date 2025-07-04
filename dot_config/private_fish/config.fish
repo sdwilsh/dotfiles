@@ -24,6 +24,9 @@ if status is-interactive
     if command -q just
         just --completions fish | source
     end
+    if command -q kubectl
+        kubectl completion fish | source
+    end
     if command -q kustomize
         kustomize completion fish | source
     end
