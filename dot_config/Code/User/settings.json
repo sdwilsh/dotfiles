@@ -15,8 +15,16 @@
     },
     "dotfiles.repository": "https://github.com/sdwilsh/dotfiles.git",
     "dotfiles.targetPath": "~/.local/share/chezmoi",
+    "nrf-connect.enableTelemetry": true,
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.defaultLocation": "editor",
-    "nrf-connect.enableTelemetry": true
+    "terminal.integrated.ignoreProcessNames": [
+        "starship",
+        "oh-my-posh",
+        "bash",
+        "zsh",
+        "fish"
+    ],
+    "terminal.integrated.suggest.enabled": false
 }
 
