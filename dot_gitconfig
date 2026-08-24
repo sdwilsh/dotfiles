@@ -1,3 +1,5 @@
 [user]
-	email = 656602+sdwilsh@users.noreply.github.com
-	name = Shawn Wilsher
+  email = 656602+sdwilsh@users.noreply.github.com
+  name = Shawn Wilsher
+[include]
+  path = ~/.gitconfig.local
