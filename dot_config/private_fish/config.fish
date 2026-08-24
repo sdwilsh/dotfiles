@@ -18,6 +18,9 @@ if status is-interactive
     if command -q devpod-cli
         devpod-cli completion fish | sed -e 's/-c devpod/-c devpod-cli/g' -e 's/"devpod/"devpod-cli/' | source
     end
+    if command -q herdr
+        herdr completion fish | source
+    end
     if command -q jj
         jj util completion fish | source
     end
