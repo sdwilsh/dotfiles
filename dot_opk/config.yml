@@ -8,10 +8,13 @@ providers:
     scopes: openid offline_access
     access_type: offline
     prompt: consent
+    # The host must be localhost, not 127.0.0.1. opkssh opens the browser at
+    # localhost, so a 127.0.0.1 callback loses the state cookie. Use 127.0.0.1
+    # again when opkssh ships openpubkey v0.26.0 or later.
     redirect_uris:
-      - http://127.0.0.1:3000/login-callback
-      - http://127.0.0.1:10001/login-callback
-      - http://127.0.0.1:11110/login-callback
+      - http://localhost:3000/login-callback
+      - http://localhost:10001/login-callback
+      - http://localhost:11110/login-callback
 
   - alias: google
     issuer: https://accounts.google.com
